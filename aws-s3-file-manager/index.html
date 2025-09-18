@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Resource Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AWS Resource Dashboard</h1>
+        
+        <div class="dashboard">
+            <div class="card">
+                <h2>EC2 Instances</h2>
+                <div id="ec2-list"></div>
+                <button onclick="loadEC2()">Refresh</button>
+            </div>
+            
+            <div class="card">
+                <h2>S3 Buckets</h2>
+                <div id="s3-list"></div>
+                <button onclick="loadS3()">Refresh</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
