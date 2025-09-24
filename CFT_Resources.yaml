@@ -1,0 +1,10 @@
+Resources:
+  MyEC2Instance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't2.micro'
+      KeyName: 'ArcLinux'
+      ImageId: 'ami-08982f1c5bf93d976'  # Replace with a valid AMI ID
+      SecurityGroupIds:
+        - 'sg-066b6bd87567507f5'  # Replace with a valid Security Group ID
+      SubnetId: 'subnet-06b15340a66ed9d4c'  # Replace with a valid Subnet ID
